@@ -1,23 +1,107 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.greenAccent,
         appBar: AppBar(
           backgroundColor: Color(0xff000000),
           centerTitle: true,
-          // toolbarTextStyle: Colors.white,
-          title: Text("My Dashboard App"),
+          title: Text(
+            "My Dashboard App",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-        body: Center(
-          child: Image.network(
-            'https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908',
+        body: SizedBox(
+          width: 100,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.greenAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.pinkAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.yellowAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.brown,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.greenAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.pinkAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.yellowAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.brown,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.greenAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.pinkAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.yellowAccent,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+              Container(
+                color: Colors.brown,
+                height: 100,
+                width: 100,
+                child: Image.asset('images/dash.png'),
+              ),
+            ],
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
